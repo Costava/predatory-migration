@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Predatory Migration</title>
+
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="app-container">
+			<canvas class="canv js-canv" width="640" height="360">
+				Your browser does not support canvas.
+			</canvas>
+
+			<div class="loading-menu  menu center js-loading-menu">
+				<div class="section js-loading-text">
+					Loading...
+				</div>
+			</div>
+
+			<div class="main-menu menu center js-main-menu">
+				<div class="main-col">
+					<div class="section main-section">
+						<h1 class="main-title">Predatory Migration</h1>
+						<h3 class="score">High Score:&nbsp;<span class="js-high-score">0</span></h3>
+						<button class="start-button reg-button js-start">Play</button>
+					</div>
+
+					<div class="section">
+						Use W, A, S, D to move. Use mouse to turn. Click/hold to shoot. Press E to pause/resume. Kill as many birds as you can.
+					</div>
+				</div>
+
+				<div class="main-col main-col-right">
+					<div class="section volume-section">
+						<h2 class="vol-title">Volume:</h2>
+
+						<div class="vol-table">
+							<ul class="vol-col">
+								<li>Master:</li>
+								<li>Shooting:</li>
+								<li>Other</li>
+							</ul>
+
+							<ul class="vol-col">
+								<li class="slider-holder"><div>0%</div><input class="volume-slider js-master" type="range" min="0" max="1" step="0.01"></input><div>100%</div></li>
+								<li class="slider-holder"><div>0%</div><input class="volume-slider js-shooting" type="range" min="0" max="1" step="0.01"></input><div>100%</div></li>
+								<li class="slider-holder"><div>0%</div><input class="volume-slider js-other" type="range" min="0" max="1" step="0.01"></input><div>100%</div></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="section">
+						<h2 class="mouse-title">Mouse Sensitivity:</h2>
+						<div class="slider-holder">
+							<div>Low</div>
+							<input class="mouse-sens-slider js-mouse-sens" type="range" min="0.0020" max="0.0300" step="0.0001" value="0.0100"></input>
+							<div>High</div>
+						</div>
+					</div>
+
+					<div class="section">
+						<ul class="info">
+							<li>Author: <a href="https://github.com/Costava" target="_blank">Costava</a></li>
+							<li>Version: 1.0.0</li>
+							<li><a href="https://github.com/Costava/predatory-migration" target="_blank">View source on GitHub</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="pause-menu menu center js-pause-menu">
+				<div class="section pause-top">
+					<h1 class="pause-title">Paused</h1>
+					Score:&nbsp;<span class="js-score">0</span>
+				</div>
+
+				<div class="section volume-section">
+					<h2 class="vol-title">Volume:</h2>
+
+					<div class="vol-table">
+						<ul class="vol-col">
+							<li>Master:</li>
+							<li>Shooting:</li>
+							<li>Other</li>
+						</ul>
+
+						<ul class="vol-col">
+							<li class="slider-holder"><div>0%</div><input class="volume-slider js-master" type="range" min="0" max="1" step="0.01"></input><div>100%</div></li>
+							<li class="slider-holder"><div>0%</div><input class="volume-slider js-shooting" type="range" min="0" max="1" step="0.01"></input><div>100%</div></li>
+							<li class="slider-holder"><div>0%</div><input class="volume-slider js-other" type="range" min="0" max="1" step="0.01"></input><div>100%</div></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section">
+					<h2 class="mouse-title">Mouse Sensitivity:</h2>
+					<div class="slider-holder">
+						<div>Low</div>
+						<input class="mouse-sens-slider js-mouse-sens" type="range" min="0.0020" max="0.0300" step="0.0001" value="0.0100"></input>
+						<div>High</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<nav class="nav-bar pause-nav-bar">
+						<button class="resume reg-button js-resume">Resume</button>
+						<button class="pause-return reg-button js-pause-return">Main menu</button>
+					</nav>
+				</div>
+			</div>
+
+			<div class="end-menu  menu center js-end-menu">
+				<div class="section">
+					<h1 class="end-title">Game over!</h1>
+
+					<h3 class="end-score">Score:&nbsp;<span class="js-score">0</span></h3>
+					<h3 class="end-high-score"><span class="js-new"></span>High Score:&nbsp;<span class="js-high-score">0</span></h3>
+
+					<nav class="nav-bar end-nav-bar">
+						<button class="again reg-button js-again">Play again</button>
+						<button class="end-return reg-button js-end-return">Main menu</button>
+					</nav>
+				</div>
+			</div>
+
+			<div class="modal-wrapper">
+				<div class="modal">Return to the forest!</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="scripts/howler.min.js" type="text/javascript"></script>
+	<script src="scripts/bundle.js" type="text/javascript"></script>
+</html>
