@@ -54,6 +54,9 @@ html, body, .app-container {
 	position: absolute;
 	margin: 0;
 
+	/* So that menus are initially hidden */
+	margin-left: 100%;
+
 	border: 10px solid #000;
 	background-color: #3251aa;
 
