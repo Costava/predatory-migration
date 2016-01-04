@@ -306,7 +306,7 @@ function loadingCheck() {
 
 		masterVolume(0.5);
 		categoryVolume('shooting', 0.4);
-		categoryVolume('other', 0.8);
+		categoryVolume('other', 0.6);
 
 		showMenu(menus.main);
 
